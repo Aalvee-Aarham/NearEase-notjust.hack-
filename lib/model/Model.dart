@@ -8,6 +8,13 @@ class BestSpecialModel {
   BestSpecialModel({this.title, this.subTitle, this.img});
 }
 
+class fetchimageModel {
+  String? title;
+  String? subTitle;
+
+  fetchimageModel({this.title, this.subTitle});
+}
+
 class CallModel {
   String? img;
   String? name;

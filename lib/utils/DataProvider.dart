@@ -7,22 +7,37 @@ import 'package:nb_utils/nb_utils.dart';
 import 'Constants.dart';
 import 'Images.dart'; // TODO Implement this library.import 'dart:core';
 
-List<BestSpecialModel> getSpecialList() {
-  List<BestSpecialModel> list = [];
-  list.add(BestSpecialModel(
-      title: 'Fashion Emporium', subTitle: 'Fashion Store', img: example));
-  list.add(BestSpecialModel(
-      title: 'Willies Pharmacy', subTitle: 'Medical Supplies', img: example));
-  list.add(BestSpecialModel(
-      title: 'Glamour Boutique', subTitle: 'Makeup Store', img: example));
-  list.add(BestSpecialModel(
-      title: 'Health & Beauty Hub', subTitle: 'Beauty Supplies', img: example));
-  list.add(BestSpecialModel(
-      title: 'Style Haven', subTitle: 'Fashion Store', img: example));
-  list.add(BestSpecialModel(
-      title: 'Cuts & Clips Salon', subTitle: 'Barber Shop', img: example));
-  list.add(BestSpecialModel(
-      title: 'Elegance Studio', subTitle: 'Makeup Studio', img: example));
+List<fetchimageModel> getSpecialList() {
+  List<fetchimageModel> list = [];
+
+  list.add(fetchimageModel(
+    title: 'Fashion Emporium',
+    subTitle: 'Fashion Store',
+  ));
+  list.add(fetchimageModel(
+    title: 'Willies Pharmacy',
+    subTitle: 'Medical Supplies',
+  ));
+  list.add(fetchimageModel(
+    title: 'Glamour Boutique',
+    subTitle: 'Makeup Store',
+  ));
+  list.add(fetchimageModel(
+    title: 'Health & Beauty Hub',
+    subTitle: 'Beauty Supplies',
+  ));
+  list.add(fetchimageModel(
+    title: 'Style Haven',
+    subTitle: 'Fashion Store',
+  ));
+  list.add(fetchimageModel(
+    title: 'Cuts & Clips Salon',
+    subTitle: 'Barber Shop',
+  ));
+  list.add(fetchimageModel(
+    title: 'Elegance Studio',
+    subTitle: 'Makeup Studio',
+  ));
   return list;
 }
 

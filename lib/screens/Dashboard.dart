@@ -7,6 +7,7 @@ import 'package:nearease/utils/Colors.dart';
 import 'package:nearease/utils/Constants.dart';
 import 'package:nearease/utils/DataProvider.dart';
 import 'package:nearease/utils/Widgets.dart';
+import 'package:nearease/utils/fetchimage.dart';
 
 // import 'DetailScreen.dart';
 // import 'NotificationScreen.dart';
@@ -21,7 +22,7 @@ class DiscoverScreen extends StatefulWidget {
 }
 
 class DiscoverScreenState extends State<DiscoverScreen> {
-  late List<BestSpecialModel> bestSpecialList;
+  late List<fetchimageModel> bestSpecialList;
   late List<SpecialOfferModel> specialOfferList;
   late List<BestSpecialModel> bestSpecialNewList;
   late List<SpecialOfferModel> specialOfferNewList;
@@ -168,9 +169,35 @@ class DiscoverScreenState extends State<DiscoverScreen> {
                               borderRadius: BorderRadius.only(
                                   topLeft: Radius.circular(10),
                                   topRight: Radius.circular(10)),
-                              child: commonCacheImageWidget(
-                                  bestSpecialList[index].img, 110,
-                                  width: 120, fit: BoxFit.cover),
+                              child: FutureBuilder(
+                                future: fetchImages(
+                                    bestSpecialList[index].subTitle!),
+                                builder: (context, snapshot) {
+                                  if (snapshot.connectionState ==
+                                      ConnectionState.waiting) {
+                                    // While the image is being loaded, display a loading image
+                                    return SizedBox(
+                                      width: 120,
+                                      height: 110,
+                                      child: Center(
+                                          child: CircularProgressIndicator()),
+                                    );
+                                  } else if (snapshot.hasError) {
+                                    // If there's an error while loading the image, display an error message
+                                    return SizedBox(
+                                      width: 120,
+                                      height: 110,
+                                      child: Center(
+                                          child: Text('Error loading image')),
+                                    );
+                                  } else {
+                                    // If the image is loaded successfully, display it
+                                    return commonCacheImageWidget(
+                                        snapshot.data.toString(), 110,
+                                        width: 120, fit: BoxFit.cover);
+                                  }
+                                },
+                              ),
                             ),
                             Text(bestSpecialList[index].title!,
                                     style: boldTextStyle())
