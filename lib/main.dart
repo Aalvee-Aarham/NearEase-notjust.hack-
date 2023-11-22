@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:nearease/screens/Dashboard.dart';
 import 'package:nearease/screens/ShopScreen/ShopScreen.dart';
+import 'package:nearease/screens/ShopScreen/data.dart';
 import 'package:nearease/store/AppStore.dart';
 import 'package:nearease/utils/AppTheme.dart';
 import 'package:nearease/utils/DataProvider.dart';
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
       builder: (_) => MaterialApp(
         debugShowCheckedModeBanner: false,
         title: '${'near ease'}${!isMobile ? ' ${platformName()}' : ''}',
-        home: ShopScreen(),
+        home: DiscoverScreen(),
         theme: !appStore.isDarkModeOn
             ? AppThemeData.lightTheme
             : AppThemeData.darkTheme,

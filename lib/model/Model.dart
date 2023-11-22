@@ -8,6 +8,13 @@ class BestSpecialModel {
   BestSpecialModel({this.title, this.subTitle, this.img});
 }
 
+class Category {
+  final String name;
+  final IconData icon;
+
+  Category(this.name, this.icon);
+}
+
 class fetchimageModel {
   String? title;
   String? subTitle;

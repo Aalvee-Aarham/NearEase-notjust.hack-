@@ -1,3 +1,4 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 class ProductModel {
   String name;
   String price;
@@ -12,4 +13,18 @@ class ProductSlideModel {
   String title;
 
   ProductSlideModel({required this.productlist, required this.title});
+}
+
+class Data {
+  var one;
+  var two;
+  var three;
+  var categories;
+
+  Data({
+    required this.one,
+    required this.two,
+    required this.three,
+    required this.categories,
+  });
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:nearease/model/Model.dart';
 import 'package:nearease/utils/Colors.dart';
 import 'package:nb_utils/nb_utils.dart';
 
@@ -27,13 +28,6 @@ class CategorySection extends StatelessWidget {
       }).toList(),
     );
   }
-}
-
-class Category {
-  final String name;
-  final IconData icon;
-
-  Category(this.name, this.icon);
 }
 
 class CategoryCard extends StatelessWidget {

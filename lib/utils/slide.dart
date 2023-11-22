@@ -3,11 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:nearease/screens/CategoryScreen.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:nearease/model/Model.dart';
+import 'package:nearease/screens/ShopScreen/ShopScreen.dart';
 import 'package:nearease/utils/Colors.dart';
 import 'package:nearease/utils/Constants.dart';
 import 'package:nearease/utils/DataProvider.dart';
 import 'package:nearease/utils/Widgets.dart';
 import 'package:nearease/utils/fetchimage.dart';
+
+import '../screens/ShopScreen/data.dart';
 
 class slide extends StatelessWidget {
   List<fetchimageModel> bestSpecialList;
@@ -36,7 +39,10 @@ class slide extends StatelessWidget {
             itemBuilder: (BuildContext context, int index) {
               return GestureDetector(
                 onTap: () {
-                  // DetailScreen().launch(context);
+                  ShopScreen(
+                    data: FashionStoreData,
+                    subtitle: bestSpecialList[index].subTitle!,
+                  ).launch(context);
                 },
                 child: Card(
                   shape: RoundedRectangleBorder(

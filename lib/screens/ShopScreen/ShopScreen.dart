@@ -6,7 +6,10 @@ import 'package:nearease/screens/ShopScreen/data.dart';
 import 'package:nearease/screens/ShopScreen/productmodel.dart';
 
 class ShopScreen extends StatefulWidget {
-  const ShopScreen({super.key});
+  var data;
+
+  String subtitle;
+  ShopScreen({super.key, required this.data, required this.subtitle});
 
   @override
   State<ShopScreen> createState() => _ShopScreenState();
@@ -21,13 +24,17 @@ class _ShopScreenState extends State<ShopScreen> {
                 child: Container(
                     padding: const EdgeInsets.only(bottom: 30),
                     child: Column(children: <Widget>[
-                      BannerSection(subtitle: 'fashion store'),
+                      BannerSection(subtitle: widget.subtitle),
                       SizedBox(height: 20),
-                      Categorysection(topproducts),
+                      Categoiresiconsection(
+                        categories: widget.data.categories,
+                      ),
                       SizedBox(height: 8),
-                      Categorysection(bestOffers),
+                      ProductsSlide(widget.data.one),
                       SizedBox(height: 8),
-                      Categorysection(newArrivals),
+                      ProductsSlide(widget.data.two),
+                      SizedBox(height: 8),
+                      ProductsSlide(widget.data.three),
                     ])))));
   }
 }
