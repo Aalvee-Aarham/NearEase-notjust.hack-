@@ -12,14 +12,16 @@ class Categoiresiconsection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GridView.count(
-      shrinkWrap: true,
-      crossAxisCount: 4,
-      children: categories.map((category) {
-        return Container(
-          child: CategoryCard(category: category),
-        );
-      }).toList(),
+    return Center(
+      child: GridView.count(
+        shrinkWrap: true,
+        crossAxisCount: 4,
+        children: categories.map((category) {
+          return Container(
+            child: Center(child: CategoryCard(category: category)),
+          );
+        }).toList(),
+      ),
     );
   }
 }

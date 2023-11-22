@@ -241,35 +241,6 @@ List<IncludeServiceModel> getIncludeServicesList() {
   return servicesList;
 }
 
-List<ReviewModel> getReviewList() {
-  List<ReviewModel> reviewList = [];
-  reviewList.add(ReviewModel(
-      img: example,
-      name: 'Carlos Day',
-      rating: 4.5,
-      day: '4 Day ago',
-      review: example));
-  reviewList.add(ReviewModel(
-      img: example,
-      name: 'Sherman',
-      rating: 2.5,
-      day: '10 Day ago',
-      review: Review));
-  reviewList.add(ReviewModel(
-      img: example,
-      name: 'Dale Horward',
-      rating: 4,
-      day: '1 Day ago',
-      review: Review));
-  reviewList.add(ReviewModel(
-      img: example,
-      name: 'Carlos Day',
-      rating: 3.5,
-      day: '3 Day ago',
-      review: Review));
-  return reviewList;
-}
-
 List<localStyleModel> getlocalStyleList() {
   List<localStyleModel> localStyleList = [];
   localStyleList.add(localStyleModel(img: example, name: 'Carlos Day'));

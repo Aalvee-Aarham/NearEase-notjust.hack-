@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nb_utils/nb_utils.dart';
 import 'package:nearease/utils/Widgets.dart';
 import 'package:nearease/utils/fetchimage.dart';
 
@@ -6,11 +7,13 @@ class ProductDetailScreen extends StatelessWidget {
   final String description;
   final String name;
   final String price;
+  final bool isInd;
 
   ProductDetailScreen({
     required this.description,
     required this.name,
     required this.price,
+    this.isInd = false,
   });
 
   @override
@@ -81,9 +84,13 @@ class ProductDetailScreen extends StatelessWidget {
               onPressed: () {
                 // TODO: Add your logic for adding to the cart
                 // For simplicity, you can print a message for now.
-                print('Added to Cart: $name');
+                if (isInd) {
+                  toast('Added to Appointment: $name');
+                } else {
+                  toast('Added to Cart: $name');
+                }
               },
-              child: Text('Add to Cart'),
+              child: isInd ? Text('Add to Appoimtment') : Text('Add to cart'),
             ),
           ],
         ),

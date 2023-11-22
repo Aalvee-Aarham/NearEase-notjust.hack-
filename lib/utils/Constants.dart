@@ -1,7 +1,7 @@
 const Sender_id = 1;
 const Receiver_id = 2;
 
-const WalkThroughTitle1 = "Find barbershop nearby";
+const WalkThroughTitle1 = "Find shops nearby";
 const WalkThroughSubTitle1 =
     "Choose your local style choose your local style choose your local style";
 const WalkThroughTitle2 = "Attractive Promotions";

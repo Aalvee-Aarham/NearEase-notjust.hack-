@@ -24,9 +24,8 @@ class slide extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(TxtBestSpecialists, style: boldTextStyle()),
+            Text("Top stores", style: boldTextStyle()),
             8.height,
-            Text(TxtViewAll, style: boldTextStyle(color: ColorPrimary))
           ],
         ),
         8.height,

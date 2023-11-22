@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nb_utils/nb_utils.dart';
 import 'package:nearease/screens/ShopScreen/BannerSection.dart';
 import 'package:nearease/screens/ShopScreen/CategorySection.dart';
 import 'package:nearease/screens/ShopScreen/ProductsSlide.dart';
@@ -26,8 +27,14 @@ class _ShopScreenState extends State<ShopScreen> {
                     child: Column(children: <Widget>[
                       BannerSection(subtitle: widget.subtitle),
                       SizedBox(height: 20),
-                      Categoiresiconsection(
-                        categories: widget.data.categories,
+                      Center(
+                          child: Text(widget.subtitle,
+                              style: boldTextStyle().copyWith(fontSize: 20))),
+                      SizedBox(height: 20),
+                      Center(
+                        child: Categoiresiconsection(
+                          categories: widget.data.categories,
+                        ),
                       ),
                       SizedBox(height: 8),
                       ProductsSlide(widget.data.one),

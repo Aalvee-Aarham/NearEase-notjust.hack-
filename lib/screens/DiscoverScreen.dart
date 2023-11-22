@@ -26,9 +26,6 @@ class DiscoverScreen extends StatefulWidget {
 
 class DiscoverScreenState extends State<DiscoverScreen> {
   late List<fetchimageModel> bestSpecialList;
-  late List<SpecialOfferModel> specialOfferList;
-  late List<BestSpecialModel> bestSpecialNewList;
-  late List<SpecialOfferModel> specialOfferNewList;
 
   @override
   void initState() {
@@ -51,7 +48,7 @@ class DiscoverScreenState extends State<DiscoverScreen> {
                     children: [
                       Text('Hi', style: boldTextStyle(size: 18)),
                       8.width,
-                      Text('Theresa Cohen,',
+                      Text('Notjust.dev,',
                           style: TextStyle(
                               fontSize: 18,
                               color: ColorPrimary,
@@ -87,7 +84,7 @@ class DiscoverScreenState extends State<DiscoverScreen> {
                       decoration: InputDecoration(
                         contentPadding:
                             EdgeInsets.symmetric(horizontal: 10, vertical: 8),
-                        hintText: 'Find buddy specialist',
+                        hintText: 'Find nearby stores here, ',
                         prefixIcon: Icon(Icons.search, color: GreyColor),
                         hintStyle: TextStyle(color: GreyColor),
                         filled: true,
@@ -131,39 +128,69 @@ class DiscoverScreenState extends State<DiscoverScreen> {
                 child: Center(child: CategorySection()),
               ),
               slide(bestSpecialList),
-              ProductsSlide(ProductSlideModel(productlist: [
-                ProductModel(
-                  name: "Electrician - John Smith",
-                  price: "\$25.00/hour",
-                  description:
-                      "Experienced electrician with expertise in wiring, installations, and electrical repairs. Providing reliable services for both residential and commercial projects.",
-                ),
-                ProductModel(
-                  name: "Cleaner - Alice Johnson",
-                  price: "\$15.00/hour",
-                  description:
-                      "Professional cleaner offering thorough cleaning services for homes and offices. Attention to detail and efficiency guaranteed for a spotless environment.",
-                ),
-                ProductModel(
-                  name: "Web Developer - Michael Davis",
-                  price: "\$40.00/hour",
-                  description:
-                      "Skilled web developer specializing in front-end and back-end development. Creating responsive and dynamic websites tailored to your business needs.",
-                ),
-                ProductModel(
-                  name: "Graphic Designer - Emily White",
-                  price: "\$35.00/hour",
-                  description:
-                      "Creative graphic designer with a passion for visual storytelling. Crafting unique and impactful designs for branding, marketing, and digital media.",
-                ),
-                ProductModel(
-                  name: "Plumber - Daniel Lee",
-                  price: "\$30.00/hour",
-                  description:
-                      "Licensed plumber offering plumbing services for repairs, installations, and maintenance. Providing efficient solutions for residential and commercial plumbing needs.",
-                ),
-              ], title: 'Top independets near you')),
-              slide(bestSpecialList),
+              ProductsSlide(
+                  isInd: true,
+                  ProductSlideModel(productlist: [
+                    ProductModel(
+                      name: "Electrician - John Smith",
+                      price: "\$25.00/hour",
+                      description:
+                          "Experienced electrician with expertise in wiring, installations, and electrical repairs. Providing reliable services for both residential and commercial projects.",
+                    ),
+                    ProductModel(
+                      name: "Cleaner - Alice Johnson",
+                      price: "\$15.00/hour",
+                      description:
+                          "Professional cleaner offering thorough cleaning services for homes and offices. Attention to detail and efficiency guaranteed for a spotless environment.",
+                    ),
+                    ProductModel(
+                      name: "Web Developer - Michael Davis",
+                      price: "\$40.00/hour",
+                      description:
+                          "Skilled web developer specializing in front-end and back-end development. Creating responsive and dynamic websites tailored to your business needs.",
+                    ),
+                    ProductModel(
+                      name: "Graphic Designer - Emily White",
+                      price: "\$35.00/hour",
+                      description:
+                          "Creative graphic designer with a passion for visual storytelling. Crafting unique and impactful designs for branding, marketing, and digital media.",
+                    ),
+                    ProductModel(
+                      isInd: true,
+                      name: "Plumber - Daniel Lee",
+                      price: "\$30.00/hour",
+                      description:
+                          "Licensed plumber offering plumbing services for repairs, installations, and maintenance. Providing efficient solutions for residential and commercial plumbing needs.",
+                    ),
+                  ], title: 'Top independets near you')),
+              ProductsSlide(
+                  isInd: true,
+                  ProductSlideModel(productlist: [
+                    ProductModel(
+                      name: "CleanClothes Inc.",
+                      price: "\$1.50 per pound",
+                      description:
+                          "Professional laundry services providing high-quality cleaning for your clothes. Convenient and timely pick-up and delivery options available.",
+                    ),
+                    ProductModel(
+                      name: "FreshPress Solutions",
+                      price: "\$3.00 per item",
+                      description:
+                          "Specialized dry cleaning services for delicate and formal wear. Expert care to preserve the quality and longevity of your garments.",
+                    ),
+                    ProductModel(
+                      name: "Sparkle Cleaners",
+                      price: "\$20.00/hour",
+                      description:
+                          "Reliable and thorough home cleaning services. Experienced cleaners dedicated to creating a clean and comfortable living space for you.",
+                    ),
+                    ProductModel(
+                      name: "Internet Provider",
+                      price: "\$50.00/month",
+                      description:
+                          "Fast and reliable internet services for your home or business. High-speed connections and 24/7 customer support for uninterrupted connectivity.",
+                    ),
+                  ], title: "top services near you")),
             ],
           ),
         ),

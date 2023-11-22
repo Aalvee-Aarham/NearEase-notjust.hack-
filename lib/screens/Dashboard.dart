@@ -8,7 +8,6 @@ import 'package:nb_utils/nb_utils.dart';
 import 'AppointmentScreen.dart';
 import 'DiscoverScreen.dart';
 import 'MessagesScreen.dart';
-import 'EventsScreen.dart';
 import 'ProfileScreen.dart';
 
 class DashedBoardScreen extends StatefulWidget {
@@ -25,7 +24,7 @@ class DashedBoardScreenState extends State<DashedBoardScreen> {
     EAForYouTabScreen(),
     AppointmentScreen(),
     MessagesScreen(),
-    // ProfileScreen(),
+    ProfileScreen(),
   ];
 
   @override

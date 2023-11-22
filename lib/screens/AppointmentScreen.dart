@@ -206,7 +206,7 @@ class AppointmentScreenState extends State<AppointmentScreen>
                             placeholder: placeholderWidgetFn() as Widget
                                 Function(BuildContext, String)?,
                             imageUrl:
-                                "https://images.pexels.com/photos/845451/pexels-photo-845451.jpeg",
+                                "https://images.pexels.com/photos/51383/photo-camera-subject-photographer-51383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
                             height: 70,
                             width: 130,
                             fit: BoxFit.cover),
@@ -232,7 +232,7 @@ class AppointmentScreenState extends State<AppointmentScreen>
                     ],
                   ),
                   8.height,
-                  Text('Makeup Marguerite', style: secondaryTextStyle()),
+                  Text('Canon 6600', style: secondaryTextStyle()),
                   8.height,
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -243,8 +243,7 @@ class AppointmentScreenState extends State<AppointmentScreen>
                               size: 14, color: AppTextColorSecondary),
                           Padding(
                             padding: EdgeInsets.only(left: 4),
-                            child: Text('Lettie Neal',
-                                style: secondaryTextStyle()),
+                            child: Text('\$2000', style: secondaryTextStyle()),
                           ),
                         ],
                       ),
@@ -275,8 +274,10 @@ class AppointmentScreenState extends State<AppointmentScreen>
             indicatorColor: ColorPrimary,
             onTap: (index) {},
             tabs: [
-              Tab(child: Text(TabOngoing, style: TextStyle(fontSize: 14))),
-              Tab(child: Text(Taistory, style: TextStyle(fontSize: 14))),
+              Tab(
+                  child: Text("Appointments and Bookings",
+                      style: TextStyle(fontSize: 14))),
+              Tab(child: Text("Cart", style: TextStyle(fontSize: 14))),
             ],
           ),
           body: TabBarView(

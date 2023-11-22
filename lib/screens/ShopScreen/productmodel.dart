@@ -5,7 +5,10 @@ class ProductModel {
   String description;
 
   ProductModel(
-      {required this.name, required this.price, required this.description});
+      {required this.name,
+      required this.price,
+      required this.description,
+      isInd = false});
 }
 
 class ProductSlideModel {

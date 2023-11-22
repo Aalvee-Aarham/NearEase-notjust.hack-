@@ -14,9 +14,12 @@ import 'package:nearease/utils/fetchimage.dart';
 class ProductsSlide extends StatelessWidget {
   ProductSlideModel topproducts;
 
+  bool isInd;
+
   ProductsSlide(
     this.topproducts, {
     super.key,
+    this.isInd = false,
   });
 
   @override
@@ -30,7 +33,6 @@ class ProductsSlide extends StatelessWidget {
             children: [
               Text(topproducts.title, style: boldTextStyle()),
               8.height,
-              Text(TxtViewAll, style: boldTextStyle(color: ColorPrimary))
             ],
           ),
           8.height,
@@ -44,6 +46,7 @@ class ProductsSlide extends StatelessWidget {
                 return GestureDetector(
                   onTap: () {
                     ProductDetailScreen(
+                      isInd: isInd,
                       name: topproducts.productlist[index].name!,
                       price: topproducts.productlist[index].price!,
                       description: topproducts.productlist[index].description!,
