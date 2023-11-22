@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:nearease/screens/CategoryScreen.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:nearease/model/Model.dart';
+import 'package:nearease/screens/ShopScreen/productdetail.dart';
 import 'package:nearease/screens/ShopScreen/productmodel.dart';
 import 'package:nearease/utils/Colors.dart';
 import 'package:nearease/utils/Constants.dart';
@@ -42,7 +43,11 @@ class ProductsSlide extends StatelessWidget {
               itemBuilder: (BuildContext context, int index) {
                 return GestureDetector(
                   onTap: () {
-                    // DetailScreen().launch(context);
+                    ProductDetailScreen(
+                      name: topproducts.productlist[index].name!,
+                      price: topproducts.productlist[index].price!,
+                      description: topproducts.productlist[index].description!,
+                    ).launch(context);
                   },
                   child: Card(
                     shape: RoundedRectangleBorder(

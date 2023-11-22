@@ -173,3 +173,209 @@ var FashionStoreData = Data(
       Category("Beauty Products", FontAwesomeIcons.maskFace),
       Category("Handbags", FontAwesomeIcons.wallet),
     ]);
+var GroceryStoreData = Data(
+  one: ProductSlideModel(productlist: [
+    ProductModel(
+      name: "Fresh Organic Apples",
+      price: "\$3.99",
+      description:
+          "Enjoy the crisp and sweet flavor of our Fresh Organic Apples. These apples are carefully selected for their quality and are perfect for snacking or adding to your favorite recipes. Packed with nutrients, they are a healthy choice for you and your family.",
+    ),
+    ProductModel(
+      name: "Locally Sourced Tomatoes",
+      price: "\$2.49",
+      description:
+          "Add a burst of flavor to your meals with our Locally Sourced Tomatoes. Grown in nearby farms, these tomatoes are ripe, juicy, and perfect for salads, sauces, or sandwiches. Support local farmers and savor the freshness of these delicious tomatoes.",
+    ),
+    ProductModel(
+      name: "Organic Whole Grain Bread",
+      price: "\$4.99",
+      description:
+          "Start your day right with our Organic Whole Grain Bread. Made from a blend of nutritious whole grains, this bread is a wholesome choice for your breakfast or lunch. Enjoy the hearty taste and benefits of organic ingredients.",
+    ),
+    ProductModel(
+      name: "Farm-Fresh Eggs",
+      price: "\$2.99",
+      description:
+          "Elevate your breakfast with our Farm-Fresh Eggs. Sourced from local farms, these eggs are packed with protein and are a versatile ingredient for various recipes. Whether you fry, scramble, or bake, these eggs are a kitchen essential.",
+    ),
+    ProductModel(
+      name: "Premium Ground Coffee",
+      price: "\$8.99",
+      description:
+          "Start your morning with the rich aroma of our Premium Ground Coffee. Carefully selected and roasted to perfection, this coffee delivers a bold and flavorful experience. Kickstart your day with a cup of this high-quality coffee blend.",
+    ),
+  ], title: "Fresh Produce"),
+  two: ProductSlideModel(productlist: [
+    ProductModel(
+      name: "Grass-Fed Ground Beef",
+      price: "\$6.99",
+      description:
+          "Cook up delicious and lean meals with our Grass-Fed Ground Beef. Sourced from grass-fed cattle, this ground beef is a healthier option for your favorite recipes. Enjoy the natural flavor and quality of this premium meat.",
+    ),
+    ProductModel(
+      name: "Organic Baby Spinach",
+      price: "\$2.99",
+      description:
+          "Add a nutritious boost to your salads and smoothies with our Organic Baby Spinach. Packed with vitamins and minerals, this spinach is grown without synthetic pesticides or fertilizers. Make healthy choices for your meals with this organic option.",
+    ),
+    ProductModel(
+      name: "Wild-Caught Salmon Fillets",
+      price: "\$9.99",
+      description:
+          "Indulge in the rich taste of our Wild-Caught Salmon Fillets. Sourced from sustainable fisheries, these fillets are full of omega-3 fatty acids and are perfect for grilling, baking, or pan-searing. Enjoy a delicious and nutritious seafood option.",
+    ),
+    ProductModel(
+      name: "Freshly Squeezed Orange Juice",
+      price: "\$4.49",
+      description:
+          "Start your day with the refreshing taste of our Freshly Squeezed Orange Juice. Made from ripe oranges, this juice is packed with vitamin C and natural sweetness. Quench your thirst and enjoy a burst of citrus flavor.",
+    ),
+    ProductModel(
+      name: "Creamy Greek Yogurt",
+      price: "\$3.29",
+      description:
+          "Savor the creamy goodness of our Greek Yogurt. Rich in protein and probiotics, this yogurt is a delicious and healthy snack. Enjoy it on its own or mix it with your favorite fruits and granola for a satisfying treat.",
+    ),
+  ], title: "Meat and Dairy"),
+  three: ProductSlideModel(productlist: [
+    ProductModel(
+      name: "Whole Grain Pasta",
+      price: "\$1.99",
+      description:
+          "Create wholesome and hearty meals with our Whole Grain Pasta. Made from a blend of whole wheat and other grains, this pasta is a nutritious alternative to traditional options. Cook up delicious and healthy pasta dishes with this choice.",
+    ),
+    ProductModel(
+      name: "Organic Quinoa",
+      price: "\$5.99",
+      description:
+          "Add a nutrient-rich grain to your diet with our Organic Quinoa. Packed with protein and essential amino acids, quinoa is a versatile and healthy addition to salads, bowls, and side dishes. Enjoy the benefits of organic and gluten-free quinoa.",
+    ),
+    ProductModel(
+      name: "Canned Organic Beans",
+      price: "\$1.49",
+      description:
+          "Stock your pantry with our Canned Organic Beans. These beans are a convenient and nutritious option for various recipes, from soups to salads. Enjoy the natural flavor and benefits of organic beans with the convenience of canned goods.",
+    ),
+    ProductModel(
+      name: "Extra Virgin Olive Oil",
+      price: "\$7.99",
+      description:
+          "Enhance your cooking with the richness of our Extra Virgin Olive Oil. Cold-pressed from high-quality olives, this oil adds a flavorful and healthy touch to salads, marinades, and cooking. Elevate your culinary creations with this premium olive oil.",
+    ),
+    ProductModel(
+      name: "Organic Honey",
+      price: "\$4.99",
+      description:
+          "Sweeten your dishes naturally with our Organic Honey. Sourced from organic beekeepers, this honey is free from additives and preservatives. Use it as a sweetener for tea, drizzle it over yogurt, or incorporate it into your favorite recipes.",
+    ),
+  ], title: "Pantry Essentials"),
+  categories: [
+    Category("Fresh Produce", FontAwesomeIcons.apple),
+    Category("Meat and Dairy", FontAwesomeIcons.hamburger),
+    Category("Pantry Essentials", FontAwesomeIcons.shoppingBasket),
+  ],
+);
+var FastFoodRestaurantData = Data(
+  one: ProductSlideModel(productlist: [
+    ProductModel(
+      name: "Cheeseburger",
+      price: "\$4.99",
+      description:
+          "Satisfy your cravings with our Classic Cheeseburger. Made with a juicy beef patty, melted cheese, fresh lettuce, tomatoes, and our special sauce, this burger is a timeless favorite. Enjoy a burst of flavor in every bite.",
+    ),
+    ProductModel(
+      name: "Crispy Chicken Nuggets",
+      price: "\$3.49",
+      description:
+          "Snack on our Crispy Chicken Nuggets, the perfect bite-sized treat. Golden and crunchy on the outside, tender on the inside, these nuggets are great for dipping in your favorite sauces. A delicious and convenient snack for any time of the day.",
+    ),
+    ProductModel(
+      name: "Spicy Chicken Sandwich",
+      price: "\$5.99",
+      description:
+          "Add some heat to your meal with our Spicy Chicken Sandwich. Featuring a seasoned and crispy chicken fillet, lettuce, and spicy mayo, this sandwich is a flavorful choice for those who love a kick of spice. Spice up your day with this tasty option.",
+    ),
+    ProductModel(
+      name: "Fries",
+      price: "\$2.49",
+      description:
+          "Complete your meal with our Classic Fries. Crispy on the outside and fluffy on the inside, these fries are the perfect side for any dish. Enjoy them on their own or pair them with your favorite dipping sauce for a satisfying snack.",
+    ),
+    ProductModel(
+      name: "Soda",
+      price: "\$1.99",
+      description:
+          "Quench your thirst with our Refreshing Soda. Choose from a variety of classic flavors to complement your meal. Served chilled and fizzy, our sodas are the ideal beverage to accompany your delicious fast-food experience.",
+    ),
+  ], title: "Burgers and Sides"),
+  two: ProductSlideModel(productlist: [
+    ProductModel(
+      name: "Deluxe Pizza Slice",
+      price: "\$3.99",
+      description:
+          "Enjoy a slice of heaven with our Deluxe Pizza Slice. Topped with a savory blend of pepperoni, sausage, bell peppers, onions, and melted cheese, this pizza slice is a feast for your taste buds. Indulge in the perfect combination of flavors.",
+    ),
+    ProductModel(
+      name: "Crispy Chicken Wrap",
+      price: "\$4.49",
+      description:
+          "Wrap up your hunger with our Crispy Chicken Wrap. Filled with crispy chicken tenders, lettuce, tomatoes, and your choice of sauce, this wrap is a convenient and satisfying option for those on the go. A tasty handheld delight.",
+    ),
+    ProductModel(
+      name: "Milkshake",
+      price: "\$3.99",
+      description:
+          "Treat yourself to our Classic Milkshake. Choose from a variety of flavors, including chocolate, vanilla, and strawberry. Made with creamy ice cream, our milkshakes are a delightful and indulgent way to satisfy your sweet tooth.",
+    ),
+    ProductModel(
+      name: "Loaded Nachos",
+      price: "\$5.99",
+      description:
+          "Share the joy with our Loaded Nachos. Piled high with melted cheese, seasoned ground beef, jalapeños, sour cream, and guacamole, these nachos are perfect for sharing or enjoying as a flavorful snack. Dive into a plate of deliciousness.",
+    ),
+    ProductModel(
+      name: "Iced Coffee",
+      price: "\$2.99",
+      description:
+          "Stay energized with our Iced Coffee. Made with freshly brewed coffee and served over ice, this drink is a refreshing pick-me-up. Add your favorite sweetener and cream for a customized iced coffee experience.",
+    ),
+  ], title: "Pizza and Wraps"),
+  three: ProductSlideModel(productlist: [
+    ProductModel(
+      name: "Grilled Chicken Salad",
+      price: "\$6.99",
+      description:
+          "Opt for a healthier choice with our Grilled Chicken Salad. Featuring tender grilled chicken, crisp lettuce, cherry tomatoes, cucumbers, and your choice of dressing, this salad is a light and satisfying option for those watching their calories.",
+    ),
+    ProductModel(
+      name: "Vegetarian Wrap",
+      price: "\$4.99",
+      description:
+          "Delight in our Vegetarian Wrap, a tasty option for those who prefer plant-based choices. Filled with fresh vegetables, hummus, and your choice of toppings, this wrap is a flavorful and satisfying meat-free alternative.",
+    ),
+    ProductModel(
+      name: "Cheesy Garlic Breadsticks",
+      price: "\$3.49",
+      description:
+          "Indulge in our Cheesy Garlic Breadsticks, the perfect accompaniment to any meal. Baked to perfection with garlic butter and melted cheese, these breadsticks are a delicious and shareable side that will leave you wanting more.",
+    ),
+    ProductModel(
+      name: "Fruit Smoothie",
+      price: "\$4.49",
+      description:
+          "Refresh yourself with our Fruit Smoothie. Blended with a mix of fresh fruits, yogurt, and ice, our smoothies are a fruity and wholesome beverage choice. Choose your favorite flavor and enjoy a burst of natural sweetness.",
+    ),
+    ProductModel(
+      name: "Chocolate Sundae",
+      price: "\$2.99",
+      description:
+          "Cap off your meal with our indulgent Chocolate Sundae. Drizzled with rich chocolate sauce and topped with whipped cream and a cherry, this sundae is a delightful way to satisfy your sweet cravings. Treat yourself to a sweet finale.",
+    ),
+  ], title: "Salads and Desserts"),
+  categories: [
+    Category("Burgers and Sides", FontAwesomeIcons.hamburger),
+    Category("Pizza and Wraps", FontAwesomeIcons.pizzaSlice),
+    Category("Salads and Desserts", FontAwesomeIcons.carrot),
+  ],
+);

@@ -40,7 +40,7 @@ class slide extends StatelessWidget {
               return GestureDetector(
                 onTap: () {
                   ShopScreen(
-                    data: FashionStoreData,
+                    data: FastFoodRestaurantData,
                     subtitle: bestSpecialList[index].subTitle!,
                   ).launch(context);
                 },

@@ -3,10 +3,12 @@ import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:nearease/screens/Dashboard.dart';
 import 'package:nearease/screens/ShopScreen/ShopScreen.dart';
 import 'package:nearease/screens/ShopScreen/data.dart';
+import 'package:nearease/screens/ShopScreen/productdetail.dart';
 import 'package:nearease/store/AppStore.dart';
 import 'package:nearease/utils/AppTheme.dart';
 import 'package:nearease/utils/DataProvider.dart';
 import 'package:nb_utils/nb_utils.dart';
+import 'package:nearease/utils/fetchimage.dart';
 
 AppStore appStore = AppStore();
 
