@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
       builder: (_) => MaterialApp(
         debugShowCheckedModeBanner: false,
         title: '${'near ease'}${!isMobile ? ' ${platformName()}' : ''}',
-        home: DiscoverScreen(),
+        home: DashedBoardScreen(),
         theme: !appStore.isDarkModeOn
             ? AppThemeData.lightTheme
             : AppThemeData.darkTheme,
