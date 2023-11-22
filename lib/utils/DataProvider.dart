@@ -41,69 +41,6 @@ List<fetchimageModel> getSpecialList() {
   return list;
 }
 
-List<BestSpecialModel> getSpecialNewList() {
-  List<BestSpecialModel> list = [];
-  list.add(BestSpecialModel(
-      title: 'Joseph Drake', subTitle: 'Makeup Artist', img: example));
-  list.add(BestSpecialModel(
-      title: 'Dale Horward', subTitle: 'Hire Stylist', img: example));
-  list.add(BestSpecialModel(
-      title: 'willies carpen', subTitle: 'Barber', img: example));
-  list.add(BestSpecialModel(
-      title: 'Dale Horward', subTitle: 'Makeup Artist', img: example));
-  list.add(BestSpecialModel(
-      title: 'Dale Horward', subTitle: 'Hire Stylist', img: example));
-  list.add(BestSpecialModel(
-      title: 'willies carpen', subTitle: 'Barber', img: example));
-  return list;
-}
-
-List<SpecialOfferModel> getSpecialOfferList() {
-  List<SpecialOfferModel> specialOfferList = [];
-  specialOfferList.add(SpecialOfferModel(
-      img: example, title: 'Joseph buddy', subtitle: 'Cool Summer Event'));
-  specialOfferList.add(SpecialOfferModel(
-      img: example, title: 'Sherman local ', subtitle: 'Cool Winter Event'));
-  specialOfferList.add(SpecialOfferModel(
-      img: example, title: 'Drake local buddy', subtitle: 'Cool Winter Event'));
-  specialOfferList.add(SpecialOfferModel(
-      img: example, title: 'Barber local ', subtitle: 'Cool Winter Event'));
-  specialOfferList.add(SpecialOfferModel(
-      img: example, title: 'Joseph Drake', subtitle: 'Cool Winter Event'));
-  specialOfferList.add(SpecialOfferModel(
-      img: example, title: 'Joseph local ', subtitle: 'Cool Winter Event'));
-  specialOfferList.add(SpecialOfferModel(
-      img: example, title: 'Drake local ', subtitle: 'Cool Winter Event'));
-  specialOfferList.add(SpecialOfferModel(
-      img: example, title: 'Joseph local', subtitle: 'Cool Summer Event'));
-  return specialOfferList;
-}
-
-List<SpecialOfferModel> getSpecialOfferNewList() {
-  List<SpecialOfferModel> specialOfferList = [];
-  specialOfferList.add(SpecialOfferModel(
-      img: example,
-      title: 'Joseph Drake local buddy',
-      subtitle: 'Cool Summer Event'));
-  specialOfferList.add(SpecialOfferModel(
-      img: example,
-      title: 'Sherman Barber local buddy',
-      subtitle: 'Cool Winter Event'));
-  specialOfferList.add(SpecialOfferModel(
-      img: example,
-      title: 'Joseph Drake local buddy',
-      subtitle: 'Cool Winter Event'));
-  specialOfferList.add(SpecialOfferModel(
-      img: example,
-      title: 'Sherman Barber local buddy',
-      subtitle: 'Cool Winter Event'));
-  specialOfferList.add(SpecialOfferModel(
-      img: example,
-      title: 'Joseph Drake local buddy',
-      subtitle: 'Cool Winter Event'));
-  return specialOfferList;
-}
-
 List<MessageModel> getMessageList() {
   List<MessageModel> messageList = [];
   messageList.add(MessageModel(

@@ -52,7 +52,7 @@ class slide extends StatelessWidget {
                             topLeft: Radius.circular(10),
                             topRight: Radius.circular(10)),
                         child: FutureBuilder(
-                          future: fetchImages(bestSpecialList[index].subTitle!),
+                          future: fetchImage(bestSpecialList[index].subTitle!),
                           builder: (context, snapshot) {
                             if (snapshot.connectionState ==
                                 ConnectionState.waiting) {

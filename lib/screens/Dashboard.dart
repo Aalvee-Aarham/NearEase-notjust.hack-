@@ -32,9 +32,6 @@ class DiscoverScreenState extends State<DiscoverScreen> {
   void initState() {
     super.initState();
     bestSpecialList = getSpecialList();
-    specialOfferList = getSpecialOfferList();
-    bestSpecialNewList = getSpecialNewList();
-    specialOfferNewList = getSpecialOfferNewList();
   }
 
   @override
