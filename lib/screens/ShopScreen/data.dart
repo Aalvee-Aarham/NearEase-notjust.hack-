@@ -379,3 +379,216 @@ var FastFoodRestaurantData = Data(
     Category("Salads and Desserts", FontAwesomeIcons.carrot),
   ],
 );
+var ElectronicDeviceStoreData = Data(
+  one: ProductSlideModel(productlist: [
+    ProductModel(
+      name: "Smartphone - XYZ Model",
+      price: "\$699.99",
+      description:
+          "Stay connected with the latest XYZ Model Smartphone. Featuring a sleek design, advanced camera capabilities, and powerful performance, this smartphone is perfect for both work and play. Elevate your mobile experience with cutting-edge technology.",
+    ),
+    ProductModel(
+      name: "Laptop - ABC Ultrabook",
+      price: "\$1,299.99",
+      description:
+          "Boost your productivity with the ABC Ultrabook Laptop. With a lightweight and slim design, powerful processors, and a high-resolution display, this laptop is ideal for professionals on the go. Experience seamless performance and premium features.",
+    ),
+    ProductModel(
+      name: "Smart TV - 4K Ultra HD",
+      price: "\$799.99",
+      description:
+          "Transform your entertainment with our 4K Ultra HD Smart TV. Immerse yourself in stunning visuals, vibrant colors, and smart features. Whether you're streaming your favorite shows or playing games, this TV delivers an exceptional viewing experience.",
+    ),
+    ProductModel(
+      name: "Wireless Noise-Canceling Headphones",
+      price: "\$249.99",
+      description:
+          "Escape into your own world with our Wireless Noise-Canceling Headphones. Enjoy crystal-clear audio and block out ambient noise for an immersive listening experience. Perfect for travel, work, or simply enjoying your favorite music in peace.",
+    ),
+    ProductModel(
+      name: "Gaming Console - NextGen X",
+      price: "\$499.99",
+      description:
+          "Level up your gaming with the NextGen X Gaming Console. Featuring powerful graphics, a vast game library, and seamless multiplayer capabilities, this console provides an immersive gaming experience. Unleash your gaming potential with cutting-edge technology.",
+    ),
+  ], title: "Smart Devices"),
+  two: ProductSlideModel(productlist: [
+    ProductModel(
+      name: "Digital Camera - ProShot 2023",
+      price: "\$899.99",
+      description:
+          "Capture life's moments in stunning detail with the ProShot 2023 Digital Camera. Equipped with advanced features, high-resolution sensors, and versatile shooting modes, this camera is perfect for both photography enthusiasts and professionals.",
+    ),
+    ProductModel(
+      name: "Wireless Charging Dock",
+      price: "\$49.99",
+      description:
+          "Simplify your charging routine with our Wireless Charging Dock. Compatible with a variety of devices, this dock offers a convenient and cable-free way to charge your smartphone, smartwatch, and other compatible gadgets.",
+    ),
+    ProductModel(
+      name: "Home Security Camera System",
+      price: "\$349.99",
+      description:
+          "Protect your home with our Home Security Camera System. Featuring high-definition cameras, motion detection, and remote monitoring, this system provides peace of mind. Keep an eye on your property from anywhere with this advanced security solution.",
+    ),
+    ProductModel(
+      name: "Smart Thermostat - Energy Saver",
+      price: "\$129.99",
+      description:
+          "Optimize your home's energy efficiency with the Energy Saver Smart Thermostat. Control your home's temperature remotely, create schedules, and save on energy costs. Enjoy a comfortable and smart living environment with this innovative thermostat.",
+    ),
+    ProductModel(
+      name: "Portable Bluetooth Speaker",
+      price: "\$79.99",
+      description:
+          "Take your music anywhere with our Portable Bluetooth Speaker. With a compact design and powerful sound, this speaker is perfect for outdoor activities, parties, or simply enjoying your favorite tunes on the go. Wirelessly connect and enjoy the freedom of music.",
+    ),
+  ], title: "Gadgets and Accessories"),
+  three: ProductSlideModel(productlist: [
+    ProductModel(
+      name: "Fitness Tracker - Health Monitor",
+      price: "\$129.99",
+      description:
+          "Stay active and monitor your health with the Health Monitor Fitness Tracker. Track your steps, monitor your heart rate, and get insights into your sleep patterns. A versatile companion for a healthy and active lifestyle.",
+    ),
+    ProductModel(
+      name: "Augmented Reality Glasses",
+      price: "\$599.99",
+      description:
+          "Experience the future with Augmented Reality Glasses. Immerse yourself in virtual worlds, access information in real-time, and enhance your daily activities with these cutting-edge glasses. Explore new possibilities with augmented reality technology.",
+    ),
+    ProductModel(
+      name: "Smart Home Starter Kit",
+      price: "\$299.99",
+      description:
+          "Transform your home into a smart home with our Smart Home Starter Kit. Includes smart bulbs, a smart plug, and a central hub for easy control. Enjoy the convenience of automation and create a connected living space.",
+    ),
+    ProductModel(
+      name: "E-Reader - Paperless Pro",
+      price: "\$149.99",
+      description:
+          "Immerse yourself in a world of literature with the Paperless Pro E-Reader. Featuring a high-resolution display, adjustable lighting, and a vast library of e-books, this e-reader provides a comfortable and paper-free reading experience.",
+    ),
+    ProductModel(
+      name: "4G LTE Portable Wi-Fi Hotspot",
+      price: "\$79.99",
+      description:
+          "Stay connected on the go with our 4G LTE Portable Wi-Fi Hotspot. Create a reliable and secure Wi-Fi network wherever you are. Perfect for travel, remote work, or as a backup internet solution.",
+    ),
+  ], title: "Smart Living"),
+  categories: [
+    Category("Smart Devices", FontAwesomeIcons.mobile),
+    Category("Gadgets and Accessories", FontAwesomeIcons.laptop),
+    Category("Smart Living", FontAwesomeIcons.thermometerFull),
+  ],
+);
+var LocalDrugstoreData = Data(
+  one: ProductSlideModel(productlist: [
+    ProductModel(
+      name: "Pain Relief Tablets",
+      price: "\$7.99",
+      description:
+          "Alleviate discomfort with our Pain Relief Tablets. Formulated to provide fast and effective relief from headaches, muscle aches, and minor pain. Keep these tablets on hand for quick relief when you need it most.",
+    ),
+    ProductModel(
+      name: "Allergy Relief Medicine",
+      price: "\$12.99",
+      description:
+          "Find relief from allergies with our Allergy Relief Medicine. Designed to alleviate symptoms such as sneezing, runny nose, and itchy eyes. Enjoy the outdoors without the discomfort of seasonal allergies.",
+    ),
+    ProductModel(
+      name: "Vitamin C Supplements",
+      price: "\$9.99",
+      description:
+          "Boost your immune system with our Vitamin C Supplements. Packed with essential nutrients, these supplements support overall health and well-being. Take them daily to maintain a strong and resilient immune system.",
+    ),
+    ProductModel(
+      name: "Antibacterial Hand Sanitizer",
+      price: "\$3.49",
+      description:
+          "Keep your hands clean and germ-free with our Antibacterial Hand Sanitizer. Formulated with effective germ-killing ingredients, this sanitizer is perfect for on-the-go use. Ensure proper hand hygiene wherever you are.",
+    ),
+    ProductModel(
+      name: "First Aid Kit",
+      price: "\$19.99",
+      description:
+          "Be prepared for emergencies with our First Aid Kit. Includes bandages, antiseptic wipes, pain relievers, and more. Ideal for home, travel, or keeping in your car for unexpected situations.",
+    ),
+  ], title: "Health Essentials"),
+  two: ProductSlideModel(productlist: [
+    ProductModel(
+      name: "Cold and Flu Syrup",
+      price: "\$8.99",
+      description:
+          "Combat cold and flu symptoms with our Cold and Flu Syrup. Soothe coughs, reduce congestion, and relieve discomfort. A comforting solution to help you feel better and recover quickly.",
+    ),
+    ProductModel(
+      name: "Thermometer - Digital",
+      price: "\$14.99",
+      description:
+          "Monitor your temperature with our Digital Thermometer. Accurate and easy to use, this thermometer is an essential tool for checking for fever. Keep it at home for regular health monitoring.",
+    ),
+    ProductModel(
+      name: "Digestive Health Probiotics",
+      price: "\$16.99",
+      description:
+          "Support your digestive health with our Probiotics. Formulated with beneficial bacteria, these supplements promote a healthy gut and digestive system. Incorporate them into your daily routine for overall well-being.",
+    ),
+    ProductModel(
+      name: "Sunscreen Lotion - SPF 30",
+      price: "\$9.99",
+      description:
+          "Protect your skin from harmful UV rays with our Sunscreen Lotion. With SPF 30, this lotion provides effective sun protection while moisturizing your skin. Essential for outdoor activities and daily sun exposure.",
+    ),
+    ProductModel(
+      name: "Digital Blood Pressure Monitor",
+      price: "\$29.99",
+      description:
+          "Monitor your blood pressure at home with our Digital Blood Pressure Monitor. Easy to use and accurate, this monitor is essential for those managing hypertension or monitoring their cardiovascular health.",
+    ),
+  ], title: "Wellness and Care"),
+  three: ProductSlideModel(productlist: [
+    ProductModel(
+      name: "Feminine Hygiene Products",
+      price: "\$6.99",
+      description:
+          "Stay comfortable and confident with our Feminine Hygiene Products. Designed for maximum protection and comfort, these products provide reliable support during your menstrual cycle. Choose from a variety of options to suit your needs.",
+    ),
+    ProductModel(
+      name: "Adult Incontinence Diapers",
+      price: "\$14.99",
+      description:
+          "Maintain dignity and comfort with our Adult Incontinence Diapers. Designed for discreet protection, these diapers are ideal for those managing incontinence. Stay confident and comfortable throughout the day.",
+    ),
+    ProductModel(
+      name: "Sleep Aid Supplements",
+      price: "\$11.99",
+      description:
+          "Enjoy restful sleep with our Sleep Aid Supplements. Formulated with natural ingredients to promote relaxation and a good night's sleep. Say goodbye to sleepless nights and wake up feeling refreshed.",
+    ),
+    ProductModel(
+      name: "Aromatherapy Essential Oils",
+      price: "\$19.99",
+      description:
+          "Create a calming atmosphere with our Aromatherapy Essential Oils. Perfect for use in diffusers, these oils provide soothing scents to relax your mind and body. Elevate your self-care routine with the power of aromatherapy.",
+    ),
+    ProductModel(
+      name: "Multivitamin Gummies - Adult",
+      price: "\$17.99",
+      description:
+          "Support your overall health with our Adult Multivitamin Gummies. Delicious and convenient, these gummies provide essential vitamins and minerals for your daily needs. Enjoy a tasty way to stay healthy.",
+    ),
+  ], title: "Personal Care"),
+  categories: [
+    Category("Health Essentials", FontAwesomeIcons.medkit),
+    Category("Wellness and Care", FontAwesomeIcons.heartbeat),
+    Category("Personal Care", FontAwesomeIcons.userMd),
+  ],
+);
+List Datas = [
+  FashionStoreData,
+  LocalDrugstoreData,
+  GroceryStoreData,
+  ElectronicDeviceStoreData,
+  FashionStoreData
+];

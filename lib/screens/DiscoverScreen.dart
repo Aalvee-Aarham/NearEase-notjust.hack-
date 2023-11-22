@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:nearease/screens/CategoryScreen.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:nearease/model/Model.dart';
+import 'package:nearease/screens/ShopScreen/ProductsSlide.dart';
+import 'package:nearease/screens/ShopScreen/productmodel.dart';
 import 'package:nearease/utils/Colors.dart';
 import 'package:nearease/utils/Constants.dart';
 import 'package:nearease/utils/DataProvider.dart';
@@ -129,8 +131,38 @@ class DiscoverScreenState extends State<DiscoverScreen> {
                 child: Center(child: CategorySection()),
               ),
               slide(bestSpecialList),
-              slide(bestSpecialList),
-              slide(bestSpecialList),
+              ProductsSlide(ProductSlideModel(productlist: [
+                ProductModel(
+                  name: "Electrician - John Smith",
+                  price: "\$25.00/hour",
+                  description:
+                      "Experienced electrician with expertise in wiring, installations, and electrical repairs. Providing reliable services for both residential and commercial projects.",
+                ),
+                ProductModel(
+                  name: "Cleaner - Alice Johnson",
+                  price: "\$15.00/hour",
+                  description:
+                      "Professional cleaner offering thorough cleaning services for homes and offices. Attention to detail and efficiency guaranteed for a spotless environment.",
+                ),
+                ProductModel(
+                  name: "Web Developer - Michael Davis",
+                  price: "\$40.00/hour",
+                  description:
+                      "Skilled web developer specializing in front-end and back-end development. Creating responsive and dynamic websites tailored to your business needs.",
+                ),
+                ProductModel(
+                  name: "Graphic Designer - Emily White",
+                  price: "\$35.00/hour",
+                  description:
+                      "Creative graphic designer with a passion for visual storytelling. Crafting unique and impactful designs for branding, marketing, and digital media.",
+                ),
+                ProductModel(
+                  name: "Plumber - Daniel Lee",
+                  price: "\$30.00/hour",
+                  description:
+                      "Licensed plumber offering plumbing services for repairs, installations, and maintenance. Providing efficient solutions for residential and commercial plumbing needs.",
+                ),
+              ], title: 'Top independets near you')),
               slide(bestSpecialList),
             ],
           ),

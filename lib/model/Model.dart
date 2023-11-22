@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nearease/screens/ShopScreen/productmodel.dart';
 
 class BestSpecialModel {
   String? title;
@@ -18,8 +19,9 @@ class Category {
 class fetchimageModel {
   String? title;
   String? subTitle;
+  Data? data;
 
-  fetchimageModel({this.title, this.subTitle});
+  fetchimageModel({this.title, this.subTitle, required Data Data});
 }
 
 class CallModel {

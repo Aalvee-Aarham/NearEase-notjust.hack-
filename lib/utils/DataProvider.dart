@@ -3,6 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:nearease/model/Model.dart';
 import 'package:nb_utils/nb_utils.dart';
+import 'package:nearease/screens/ShopScreen/data.dart';
+import 'package:nearease/screens/ShopScreen/productmodel.dart';
 
 import 'Constants.dart';
 import 'Images.dart'; // TODO Implement this library.import 'dart:core';
@@ -13,30 +15,23 @@ List<fetchimageModel> getSpecialList() {
   list.add(fetchimageModel(
     title: 'Fashion Emporium',
     subTitle: 'Fashion Store',
+    Data: FashionStoreData,
   ));
   list.add(fetchimageModel(
     title: 'Willies Pharmacy',
     subTitle: 'Medical Supplies',
+    Data: LocalDrugstoreData,
   ));
   list.add(fetchimageModel(
-    title: 'Glamour Boutique',
-    subTitle: 'Makeup Store',
-  ));
+      title: 'fresh veg', subTitle: 'groccery Store', Data: GroceryStoreData));
   list.add(fetchimageModel(
-    title: 'Health & Beauty Hub',
-    subTitle: 'Beauty Supplies',
-  ));
+      title: 'smart Hub',
+      subTitle: ' Electronic DeviceStore',
+      Data: ElectronicDeviceStoreData));
   list.add(fetchimageModel(
     title: 'Style Haven',
     subTitle: 'Fashion Store',
-  ));
-  list.add(fetchimageModel(
-    title: 'Cuts & Clips Salon',
-    subTitle: 'Barber Shop',
-  ));
-  list.add(fetchimageModel(
-    title: 'Elegance Studio',
-    subTitle: 'Makeup Studio',
+    Data: FashionStoreData,
   ));
   return list;
 }
