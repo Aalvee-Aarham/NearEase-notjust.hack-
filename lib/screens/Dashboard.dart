@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nearease/main.dart';
+import 'package:nearease/screens/EAForYouTabScreen.dart';
 import 'package:nearease/utils/Colors.dart';
 import 'package:nearease/utils/Widgets.dart';
 import 'package:nb_utils/nb_utils.dart';
@@ -21,7 +22,7 @@ class DashedBoardScreenState extends State<DashedBoardScreen> {
   int _selectedIndex = 0;
   var _pages = <Widget>[
     DiscoverScreen(),
-    // EventsScreen(),
+    EAForYouTabScreen(),
     // AppointmentScreen(),
     // MessagesScreen(),
     // ProfileScreen(),
@@ -38,11 +39,11 @@ class DashedBoardScreenState extends State<DashedBoardScreen> {
       currentIndex: _selectedIndex,
       onTap: _onItemTapped,
       type: BottomNavigationBarType.fixed,
-      selectedLabelStyle: TextStyle(color: ColorPrimary),
+      selectedLabelStyle: const TextStyle(color: ColorPrimary),
       selectedItemColor: ColorPrimary,
-      unselectedLabelStyle: TextStyle(color: GreyColor),
+      unselectedLabelStyle: const TextStyle(color: GreyColor),
       unselectedItemColor: GreyColor,
-      items: <BottomNavigationBarItem>[
+      items: const <BottomNavigationBarItem>[
         BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Discover'),
         BottomNavigationBarItem(icon: Icon(Icons.business), label: 'Events'),
         BottomNavigationBarItem(

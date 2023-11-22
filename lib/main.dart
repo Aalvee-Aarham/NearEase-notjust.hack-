@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:nearease/screens/Dashboard.dart';
+import 'package:nearease/screens/EAForYouTabScreen.dart';
 import 'package:nearease/screens/ShopScreen/ShopScreen.dart';
 import 'package:nearease/screens/ShopScreen/data.dart';
 import 'package:nearease/screens/ShopScreen/productdetail.dart';
