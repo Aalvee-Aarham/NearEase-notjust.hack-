@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:nearease/screens/ShopScreen/dots_indicator/src/dots_decorator.dart';
-import 'package:nearease/screens/ShopScreen/dots_indicator/src/dots_indicator.dart';
 import 'package:nearease/utils/Widgets.dart';
 import 'package:nearease/utils/fetchimage.dart';
 

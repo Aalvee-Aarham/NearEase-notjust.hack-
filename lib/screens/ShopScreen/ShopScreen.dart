@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:nearease/screens/ShopScreen/BannerSection.dart';
 import 'package:nearease/screens/ShopScreen/CategorySection.dart';
 import 'package:nearease/screens/ShopScreen/ProductsSlide.dart';
+import 'package:nearease/screens/ShopScreen/data.dart';
 import 'package:nearease/screens/ShopScreen/productmodel.dart';
 
 class ShopScreen extends StatefulWidget {
@@ -12,8 +13,6 @@ class ShopScreen extends StatefulWidget {
 }
 
 class _ShopScreenState extends State<ShopScreen> {
-  late List<ProductModel> productlist;
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -23,7 +22,12 @@ class _ShopScreenState extends State<ShopScreen> {
                     padding: const EdgeInsets.only(bottom: 30),
                     child: Column(children: <Widget>[
                       BannerSection(subtitle: 'fashion store'),
-                      Categorysection(productlist),
+                      SizedBox(height: 20),
+                      Categorysection(topproducts),
+                      SizedBox(height: 8),
+                      Categorysection(bestOffers),
+                      SizedBox(height: 8),
+                      Categorysection(newArrivals),
                     ])))));
   }
 }
