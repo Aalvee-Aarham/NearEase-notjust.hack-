@@ -23,8 +23,8 @@ class DashedBoardScreenState extends State<DashedBoardScreen> {
   var _pages = <Widget>[
     DiscoverScreen(),
     EAForYouTabScreen(),
-    // AppointmentScreen(),
-    // MessagesScreen(),
+    AppointmentScreen(),
+    MessagesScreen(),
     // ProfileScreen(),
   ];
 
